@@ -1,11 +1,3 @@
-//
-//  NotificationViewController.swift
-//  CustomNotificationUI
-//
-//  Created by suguru-kishimoto on 2018/06/20.
-//  Copyright © 2018年 suguru-kishimoto. All rights reserved.
-//
-
 import UIKit
 import UserNotifications
 import UserNotificationsUI
@@ -27,7 +19,6 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any required interface initialization here.
     }
     
     func didReceive(_ notification: UNNotification) {
