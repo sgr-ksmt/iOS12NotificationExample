@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOS12NotificationExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0XM-VR-Xgb">
+                                <rect key="frame" x="116" y="318.5" width="143" height="30"/>
+                                <state key="normal" title="Grouped Notification"/>
+                                <connections>
+                                    <action selector="demo1DidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FU6-0o-oye"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXA-VK-yHW">
+                                <rect key="frame" x="100.5" y="380.5" width="174" height="30"/>
+                                <state key="normal" title="Interactive Notification UI"/>
+                                <connections>
+                                    <action selector="demo2DidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3UU-Nl-YZt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xb7-MN-khm">
+                                <rect key="frame" x="113.5" y="442.5" width="148" height="30"/>
+                                <state key="normal" title="Clear All Notifications"/>
+                                <connections>
+                                    <action selector="clearDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="acZ-oC-wUb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0XM-VR-Xgb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Qw-Jl-Hne"/>
+                            <constraint firstItem="0XM-VR-Xgb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KVB-O1-JX0"/>
+                            <constraint firstItem="LXA-VK-yHW" firstAttribute="top" secondItem="0XM-VR-Xgb" secondAttribute="bottom" constant="32" id="NEe-2h-yHY"/>
+                            <constraint firstItem="LXA-VK-yHW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cT1-To-Maf"/>
+                            <constraint firstItem="xb7-MN-khm" firstAttribute="top" secondItem="LXA-VK-yHW" secondAttribute="bottom" constant="32" id="eTY-Iv-uAD"/>
+                            <constraint firstItem="xb7-MN-khm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lbb-80-HoV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
